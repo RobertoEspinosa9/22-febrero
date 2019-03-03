@@ -1,0 +1,64 @@
+int B;
+int BB;
+int BBB;
+int T = 2;
+int TT = 3;
+int TTT = 4;
+int C = 5;
+int CC = 6;
+int CCC = 7;
+configuración vacía () {
+  pinMode (B, INPUT_PULLUP);
+  pinMode (BB, INPUT_PULLUP);
+  pinMode (BBB, INPUT_PULLUP);
+  modo de pin (C, SALIDA);
+   pinMode (CC, SALIDA);
+    pinMode (CCC, SALIDA);
+
+}
+
+bucle de vacío () {
+B = lectura digital (T);
+ BB = digitalRead (TT);
+BBB = digitalRead (TTT);
+
+
+if (B && BB &&! BBB) {
+  escritura digital (C, 1);
+  escritura digital (CC, 0);
+  escritura digital (CCC, 0);
+}
+si (B &&! BB && BBB) {
+  escritura digital (CC, 1);
+  escritura digital (C, 0);
+  escritura digital (CCC, 0);
+  
+}
+if (! B && BB && BBB) {
+  escritura digital (CCC, 1);
+  escritura digital (C, 0);
+  escritura digital (CC, 0);
+
+}
+if (! B && BB &&! BBB) {
+  escritura digital (C, 1);
+  escritura digital (CC, 0);
+  escritura digital (CCC, 1);
+}
+si (B &&! BB &&! BBB) {
+  escritura digital (CC, 1);
+  escritura digital (C, 0);
+  escritura digital (CCC, 1);
+  
+}
+if (! B &&! BB && BBB) {
+  escritura digital (CCC, 0);
+  escritura digital (C, 1);
+  escritura digital (CC, 1);
+}
+if (! B &&! BB &&! BBB) {
+  escritura digital (CCC, 1);
+  escritura digital (C, 1);
+  escritura digital (CC, 1);
+}
+}
